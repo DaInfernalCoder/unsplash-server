@@ -4,7 +4,7 @@ A Model Context Protocol (MCP) server for integrating Unsplash image search and 
 
 ## Overview
 
-This package provides an MCP server that connects to the Unsplash API, allowing AI assistants to search and retrieve images from Unsplash's vast collection of high-quality, freely-usable images.
+This package provides an MCP server that connects to the Unsplash API, allowing AI assistants to search and retrieve images from Unsplash's vast collection of high-quality, freely-usable images. It also automatically downloads them to the neccessary folder instead of just using links if prompted.
 
 ## Features
 
