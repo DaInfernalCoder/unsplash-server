@@ -1,0 +1,51 @@
+{
+  "name": "mcp-unsplash",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "build/index.js",
+  "bin": {
+    "mcp-unsplash": "build/index.js"
+  },
+  "scripts": {
+    "build": "tsc && node -e \"import('fs').then(fs => fs.chmodSync('build/index.js', '755'))\"",
+    "start": "node build/index.js",
+    "dev": "tsc -w",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "unsplash",
+    "ai",
+    "images",
+    "llm"
+  ],
+  "author": "",
+  "license": "MIT",
+  "description": "MCP server for Unsplash API integration that provides tools to search and retrieve images",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/user/mcp-unsplash.git"
+  },
+  "homepage": "https://github.com/user/mcp-unsplash#readme",
+  "bugs": {
+    "url": "https://github.com/user/mcp-unsplash/issues"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.1",
+    "node-fetch": "^3.3.2",
+    "unsplash-js": "^7.0.19"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.8",
+    "typescript": "^5.8.2"
+  },
+  "files": [
+    "build",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

@@ -1,0 +1,34 @@
+# Source files
+src/
+
+# TypeScript config
+tsconfig.json
+
+# Dev dependencies
+node_modules/
+
+# Git files
+.git/
+.gitignore
+
+# Editor configs
+.vscode/
+.idea/
+
+# Testing
+tests/
+coverage/
+
+# Logs
+*.log
+
+# Environment variables
+.env
+.env.*
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+
+# Build cache
+.cache/
